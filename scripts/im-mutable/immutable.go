@@ -12,6 +12,14 @@ func main() {
 	fmt.Println("str = ", str)
 	fmt.Println("str_copy = ", str_copy)
 
+	// Character at index cannot be changed in string
+
+	s := "StarWars"
+	s[4] = 'C'
+	// s[4] = "C"
+	// also won't work
+	fmt.Println(s)
+
 	// bool
 	boolean := true
 	b := boolean

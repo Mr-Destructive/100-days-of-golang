@@ -44,16 +44,40 @@ func main() {
 	for _, item := range c {
 		builder.WriteString(item)
 	}
-
-	fmt.Println(builder.String())
+	fmt.Println("builder = ", builder.String())
+	b := []byte{'s', 'c', 'r', 'i', 'p', 't'}
+	for _, item := range b {
+		builder.WriteByte(item)
+	}
+	fmt.Println("builder = ", builder.String())
+	builder.WriteRune('s')
+	fmt.Println("builder = ", builder.String())
+	fmt.Println("builder = ", builder)
 
 	// Using bytes buffer method
 
-	var k bytes.Buffer
+	var buf bytes.Buffer
 
-	for i := 0; i < 4; i++ {
-		k.WriteString("no")
+	for i := 0; i < 2; i++ {
+		buf.WriteString("ja")
 	}
-	fmt.Println(k.String())
+	fmt.Println(buf.String())
+
+	buf.WriteByte('r')
+
+	fmt.Println(buf.String())
+
+	k := []rune{'s', 'c', 'r', 'i', 'p', 't'}
+	for _, item := range k {
+		buf.WriteRune(item)
+	}
+	fmt.Println(buf.String())
+	fmt.Println(buf)
+
+	buff := make([]byte, 0, 0)
+	buff.WriteByte('s')
+	buff.WriteByte('p')
+	buff.off = 1
+	fmt.Println(buff)
 
 }

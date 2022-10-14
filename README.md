@@ -8,7 +8,16 @@ Go lang is a programming language which is easier to write and even provides typ
 - [Go packages](https://pkg.go.dev/)
 - [Awesome Go projects and frmaeworks](https://github.com/avelino/awesome-go)
 
-A list of applications made with GO
+## Resources to learn Golang
+
+- [Exercism - Go track](https://exercism.org/tracks/go)
+- [Go by example](https://gobyexample.com/)
+- [Go Time - Podcast](https://changelog.com/gotime)
+- [Boot.dev Golang Course](https://boot.dev/learn/learn-golang)
+- [Zetcode Blog](https://zetcode.com/all/#go)
+- [daily.dev Golang articles](https://app.daily.dev/search?q=golang)
+
+Some famous applications made with GO!
 
 |Web apps | DevOps tools | CLI tools |
 |---------|--------------|-----------|

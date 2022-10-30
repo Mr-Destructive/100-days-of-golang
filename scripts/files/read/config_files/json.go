@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"fmt"
 	"io/ioutil"
 	"log"
 )
@@ -16,6 +17,9 @@ func main() {
 	json.Unmarshal([]byte(f), &result)
 
 	log.Println(result)
-	log.Println(result["title"])
+	for k, v := range result {
+		fmt.Println(k, ":", v)
+		fmt.Printf("%T\n", v)
+	}
 
 }

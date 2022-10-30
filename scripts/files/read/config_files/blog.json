@@ -1,5 +1,7 @@
 {
     "title": "Golang Blog Series",
     "date": "22nd October 2022",
-    "tags": ["go", "files"]
+    "tags": ["go", "files"],
+    "words": 1500,
+    "published": true
 }

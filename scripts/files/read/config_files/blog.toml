@@ -1,0 +1,12 @@
+
+[blog]
+name='techstructive-blog'
+tags=['go','django','vim']
+author='meet gor'
+active=true
+
+[author]
+name='Meet Gor'
+github='mr-destructive'
+twitter='meetgor21'
+posts=80

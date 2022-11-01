@@ -1,15 +1,15 @@
 package main
 
 import (
-	"io/ioutil"
 	"log"
+	"os"
 
-	toml "github.com/pelletier/go-toml"
+	yaml "gopkg.in/yaml.v3"
 )
 
 func main() {
 
-	f, err := ioutil.ReadFile("blog.toml")
+	f, err := os.ReadFile("blog.yaml")
 
 	if err != nil {
 		log.Fatal(err)
@@ -17,20 +17,16 @@ func main() {
 
 	var data map[interface{}]interface{}
 
-	err = toml.Unmarshal(f, &data)
+	err = yaml.Unmarshal(f, &data)
 	log.Println(data)
 
 	if err != nil {
+
 		log.Fatal(err)
 	}
 
 	for k, v := range data {
 		log.Println(k, ":", v)
-		switch t := v.(type) {
-		case map[string]interface{}:
-			for a, b := range t {
-				log.Println(a, ":", b)
-			}
-		}
+		log.Printf("%T", v)
 	}
 }

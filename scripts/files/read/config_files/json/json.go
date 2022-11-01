@@ -3,13 +3,13 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
 	"log"
+	"os"
 )
 
 func main() {
 
-	f, err := ioutil.ReadFile("blog.json")
+	f, err := os.ReadFile("blog.json")
 	if err != nil {
 		log.Println(err)
 	}

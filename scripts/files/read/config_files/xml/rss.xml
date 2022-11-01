@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<channel>
+<title>Meet Gor</title>
+<description>Techstructive Blog Feed</description>
+<item>
+<title>Why and How to make and use Vim as a text editor and customizable IDE</title>
+<link>https://www.meetgor.com/vim-text-editor-ide</link>
+</item>
+<item>
+<title>Setting up Vim for Python</title>
+<link>https://www.meetgor.com/vim-for-python</link>
+</item>
+</channel>

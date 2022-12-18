@@ -1,4 +1,1 @@
-Hi
 Hello
-World
-Gophers

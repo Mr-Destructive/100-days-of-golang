@@ -2,7 +2,7 @@ package main
 
 import (
 	"encoding/xml"
-	"io/ioutil"
+	"io"
 	"log"
 	"net/http"
 )
@@ -39,7 +39,7 @@ func main() {
 	check_error(err)
 
 	defer response.Body.Close()
-	data, err := ioutil.ReadAll(response.Body)
+	data, err := io.ReadAll(response.Body)
 
 	check_error(err)
 

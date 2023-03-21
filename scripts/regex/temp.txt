@@ -1,0 +1,3 @@
+One of the gophers used a slice,
+the other one used a arrays.
+Some gophers were idle in the memory.

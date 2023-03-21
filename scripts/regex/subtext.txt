@@ -1,0 +1,9 @@
+abc21@def.com is the mail address of user id 1234
+The email address abe2def.com is of user name abc
+a2be.@def.com
+Email address: abe@de2f.com, User id: 45
+johndoe@example.com
+jane.doe123@example.com
+janedoe@example.co.uk
+john123@example.org
+janedoe456@example.net

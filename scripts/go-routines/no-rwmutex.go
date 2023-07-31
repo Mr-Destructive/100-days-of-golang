@@ -31,13 +31,16 @@ func main() {
 	count := 1
 	var wg sync.WaitGroup
 	var mutex sync.Mutex
-	wg.Add(5)
-	for i := 0; i < 5; i++ {
+	readers := 5
+	writers := 3
+
+	wg.Add(readers)
+	for i := 0; i < readers; i++ {
 		go reader(i, &count, &wg, &mutex)
 	}
 
-	wg.Add(5)
-	for i := 0; i < 5; i++ {
+	wg.Add(writers)
+	for i := 0; i < writers; i++ {
 		go writer(i, 1, &count, &wg, &mutex)
 	}
 	wg.Wait()

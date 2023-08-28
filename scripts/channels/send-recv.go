@@ -14,8 +14,8 @@ func receiver(ch <-chan int, wg *sync.WaitGroup) {
 
 func sender(ch chan<- int, wg *sync.WaitGroup) {
 	for i := 0; i < 10; i++ {
-		ch <- i
 		fmt.Println("Sent:", i)
+		ch <- i
 	}
 	close(ch)
 	wg.Done()

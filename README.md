@@ -65,3 +65,5 @@ Some famous applications made with GO!
 | 29  | Generics | [Generics in Golang](https://www.meetgor.com/golang-generics/) | [generics](https://github.com/Mr-Destructive/100-days-of-golang/tree/main/scripts/generics) | [generics tutorial](https://go.dev/doc/tutorial/generics) |
 | 30  | Go Routines | [Go Routines](https://www.meetgor.com/golang-go-routines/) | [go-routines](https://github.com/Mr-Destructive/100-days-of-golang/tree/main/scripts/go-routines) | [sync](https://pkg.go.dev/sync) |
 | 31  | Channels | [Go Channels](https://www.meetgor.com/golang-channels/) | [channels](https://github.com/Mr-Destructive/100-days-of-golang/tree/main/scripts/channels) | [chan](https://pkg.go.dev/sync) |
+| 32  | Web: URL Parsing | [Web: URL Parsing](https://www.meetgor.com/golang-web-url-parsing/) | [web/url-parsing](https://github.com/Mr-Destructive/100-days-of-golang/tree/main/web/url-parsing) | [net/url](https://pkg.go.dev/net/url) |
+

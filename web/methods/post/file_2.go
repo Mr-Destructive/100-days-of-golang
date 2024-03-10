@@ -2,12 +2,14 @@ package main
 
 import (
 	"bytes"
+	"encoding/base64"
 	"encoding/json"
 	"fmt"
 	"io"
 	"mime/multipart"
 	"net/http"
 	"os"
+	"strings"
 )
 
 type ResponseFile struct {
@@ -46,7 +48,7 @@ func main() {
 	}
 
 	contentType := writer.FormDataContentType()
-    fmt.Println(contentType)
+	fmt.Println(contentType)
 	// Close the multipart writer
 	writer.Close()
 	fmt.Println(body.String())
@@ -68,6 +70,18 @@ func main() {
 	}
 	token := ResponseFile{}
 	json.Unmarshal(respBody, &token)
+
 	fmt.Println(token)
 	fmt.Println(token.Files[fileName])
+
+	decodedFiles := make(map[string]string)
+	for key, value := range token.Files {
+		encodedVal := strings.Split(value, "base64,")[1]
+		decodedContent, err := base64.StdEncoding.DecodeString(encodedVal)
+		if err != nil {
+			panic(err)
+		}
+		decodedFiles[key] = string(decodedContent)
+	}
+	fmt.Println(decodedFiles[fileName])
 }

@@ -42,7 +42,7 @@ func main() {
 	}
 	apiURL := "https://dummy.restapiexample.com/api/v1/create"
 
-	// marshing process
+	// marshalling process
 	// converting Go specific data structure/types to JSON
 	bodyBytes, err := json.Marshal(user)
 	if err != nil {
@@ -68,11 +68,10 @@ func main() {
 		panic(err)
 	}
 
-	// unmarshing process
+	// unmarshalling process
 	// converting JSON to Go specific data structure/types
 	var userResponse UserResponse
 	if err := json.Unmarshal(respBody, &userResponse); err != nil {
-
 		panic(err)
 	}
 	fmt.Println(userResponse)

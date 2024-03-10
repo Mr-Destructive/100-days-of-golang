@@ -8,9 +8,9 @@ import (
 )
 
 type User struct {
-	Name   string
-	Salary int
-	Age    int
+	Name   string `json:"name"`
+	Salary int    `json:"salary"`
+	Age    int    `json:"age"`
 }
 
 /*
@@ -28,12 +28,13 @@ func main() {
 	}
 	apiURL := "https://dummy.restapiexample.com/api/v1/create"
 
-	// marshing process
+	// marshalling process
 	// converting Go specific data structure/types to JSON
 	bodyBytes, err := json.Marshal(user)
 	if err != nil {
 		panic(err)
 	}
+
 	fmt.Println(string(bodyBytes))
 
 	// reading json into a buffer/in-memory

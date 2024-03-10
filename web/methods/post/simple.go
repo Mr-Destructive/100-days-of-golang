@@ -15,7 +15,7 @@ func main() {
 	// https://postman-echo.com/post
 
 	// POST request
-	resp, err := http.Post(apiURL, "application/json", nil)
+	resp, err := http.Post(apiURL, "", nil)
 	if err != nil {
 		panic(err)
 	}

@@ -66,4 +66,5 @@ Some famous applications made with GO!
 | 30  | Go Routines | [Go Routines](https://www.meetgor.com/golang-go-routines/) | [go-routines](https://github.com/Mr-Destructive/100-days-of-golang/tree/main/scripts/go-routines) | [sync](https://pkg.go.dev/sync) |
 | 31  | Channels | [Go Channels](https://www.meetgor.com/golang-channels/) | [channels](https://github.com/Mr-Destructive/100-days-of-golang/tree/main/scripts/channels) | [chan](https://pkg.go.dev/sync) |
 | 32  | Web: URL Parsing | [Web: URL Parsing](https://www.meetgor.com/golang-web-url-parsing/) | [web/url-parsing](https://github.com/Mr-Destructive/100-days-of-golang/tree/main/web/url-parsing) | [net/url](https://pkg.go.dev/net/url) |
-
+| 33  | Web: GET Method | [Web: GET Method](https://www.meetgor.com/golang-web-get-method/) | [web/get-method](https://github.com/Mr-Destructive/100-days-of-golang/tree/main/web/methods/get) | [net/http](https://pkg.go.dev/net/http), [encoding/json](https://pkg.go.dev/encoding/json)  |
+| 34  | Web: POST Method | [Web: POST Method](https://www.meetgor.com/golang-web-post-method/) | [web/post-method](https://github.com/Mr-Destructive/100-days-of-golang/tree/main/web/methods/post) | [net/http](https://pkg.go.dev/net/http), [encoding/json](https://pkg.go.dev/encoding/json)  |
